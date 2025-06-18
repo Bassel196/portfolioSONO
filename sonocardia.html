@@ -4,254 +4,534 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonocardia</title>
-    <meta name="description" content="Sonocardia: AI-powered heart disease detection system. Learn about our project, team, and contact us.">
-    <meta name="keywords" content="Sonocardia, AI Heart Detection, Heart Murmur, Healthcare AI, Medical Technology">
+    <title>Sonocardia - AI-Powered Heart Disease Detection</title>
+    <meta name="description" content="Sonocardia: Revolutionary AI-powered heart disease detection system. Real-time monitoring, early detection, and life-saving technology.">
+    <meta name="keywords" content="Sonocardia, AI Heart Detection, Heart Murmur, Healthcare AI, Medical Technology, ECG Analysis">
     <meta name="author" content="Sonocardia Team">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div id="preloader">
-    <div class="loader"></div>
-</div>
-
-<header>
-    <div class="ecg-background">
-        <svg viewBox="0 0 2400 200" preserveAspectRatio="none" class="ecg-wave">
-            <path d="
-                M0,100 
-                L100,100 L150,60 L200,100 L250,100 
-                L300,20 L350,180 L400,100 L500,100 
-                L550,60 L600,100 L700,100
-
-                L800,100 L850,60 L900,100 L950,100 
-                L1000,20 L1050,180 L1100,100 L1200,100 
-                L1250,60 L1300,100 L1400,100
-
-                L1500,100 L1550,60 L1600,100 L1650,100 
-                L1700,20 L1750,180 L1800,100 L1900,100 
-                L1950,60 L2000,100 L2100,100
-
-                L2200,100 L2250,60 L2300,100 L2400,100
-            " />
-        </svg>
+    <!-- Particle Background -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
-    <h1>Sonocardia Project</h1>
-    <p>AI-Powered Mobile App For Heart Disease Detection & Prediction</p>
-</header>
 
-
-<nav>
-    <div class="menu-toggle" id="menuToggle">
-        <i class="fa-solid fa-bars"></i>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
     </div>
-    <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#team">Team</a>
-        <a href="#videos">Videos</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
 
+    <!-- Header -->
+    <header>
+        <div class="ecg-background">
+            <svg viewBox="0 0 2400 200" preserveAspectRatio="none" class="ecg-wave">
+                <path d="
+                    M0,100 
+                    L150,100 L200,40 L250,100 L300,100 
+                    L350,10 L400,190 L450,100 L600,100 
+                    L650,40 L700,100 L850,100
 
-<section id="about" class="section">
-    <h2>About the Project</h2>
-    <p><strong>Sonocardia</strong> is an intelligent heart sound analysis system that uses deep learning to detect heart murmurs and predict detailed murmur characteristics. Our system provides accurate patient-level analysis based on audio recordings from multiple auscultation points, helping to improve early heart disease detection. The system features real-time murmur detection, classification of murmur types, and integrates with mobile applications and embedded hardware for remote monitoring.</p>
+                    L1000,100 L1050,40 L1100,100 L1150,100 
+                    L1200,10 L1250,190 L1300,100 L1450,100 
+                    L1500,40 L1550,100 L1700,100
 
-    <h3><i class="fa-solid fa-lightbulb"></i> Why Sonocardia?</h3>
-    <p>Cardiovascular diseases claim 17.9 million lives annually — that’s 32% of all global deaths.</p>
-    <p>Sonocardia is revolutionizing cardiac care through real-time, AI-driven heart monitoring, making early detection accessible, affordable, and automatic.</p>
-
-    <h3><i class="fa-solid fa-mobile-screen"></i> What is Sonocardia?</h3>
-    Sonocardia is an AI-powered mobile application that enables real-time heart sound and ECG analysis to detect and predict heart diseases quickly and accurately, using an embedded hardware.
-
-    <ul>
-        <li>Captures heart sounds using a modified stethoscope (MAX9814 + ESP32)</li>
-        <li>Records ECG signals via AD8232 sensor</li>
-        <li>Analyzes both in real-time using AI and deep learning</li>
-        <li>Detects murmurs, arrhythmias, heart failure risk, and more</li>
-        <li>Notifies users and emergency services in critical cases</li>
-        <li>Enables users to share results directly with doctors</li>
-    </ul>
-
-    <h3><i class="fa-solid fa-gears"></i> How It Works</h3>
-    <ul>
-        <li><strong>Record:</strong> 5–10 seconds of heart sound and ECG via the app</li>
-        <li><strong>Analyze:</strong> ML & DL models trained on 100k+ real-world samples</li>
-        <li><strong>Diagnose:</strong> Classify as normal/abnormal, predict severity, alert user</li>
-        <li><strong>Share:</strong> Instantly send reports to physicians or caregivers</li>
-    </ul>
-
-    <h3><i class="fa-solid fa-microscope"></i> Technology Highlights</h3>
-    <ul>
-        <li><i class="fa-solid fa-lightbulb"></i> Machine & Deep Learning (CNNs, Random Forest, Transformers)</li>
-        <li><i class="fa-solid fa-chart-line"></i> Accuracy: +90% in HeartSound Classification and in early Arrhythmia Detection and Prediction</li>
-        <li><i class="fa-solid fa-wifi"></i> Integrated hardware for real-time recording & feedback</li>
-        <li><i class="fa-solid fa-cloud"></i> Seamless cloud communication and data visualization</li>
-        <li><i class="fa-solid fa-lock"></i> Built-in security & emergency response capabilities</li>
-    </ul>
-
-    <h3><i class="fa-solid fa-users"></i> Target Users</h3>
-    <ul>
-        <li><i class="fa-solid fa-heart-circle-check"></i> Patients with heart conditions</li>
-        <li><i class="fa-solid fa-person-cane"></i> Seniors living alone or in remote areas</li>
-        <li><i class="fa-solid fa-user-doctor"></i> Doctors needing rapid diagnostics</li>
-        <li><i class="fa-solid fa-people-group"></i> Caregivers tracking loved ones’ health</li>
-        <li><i class="fa-solid fa-person-running"></i> Health-conscious individuals</li>
-    </ul>
-
-    <h3><i class="fa-solid fa-briefcase"></i> Business Impact</h3>
-    <ul>
-        <li><i class="fa-solid fa-chart-line"></i> Entering the booming mHealth market</li>
-        <li><i class="fa-solid fa-globe"></i> Similar devices are not available in Egypt and cost at least $300 internationally. <br> Sonocardia offers a low-cost alternative with potential for local manufacturing in Egypt at significantly reduced prices.</li>
-        <li><i class="fa-solid fa-coins"></i> Revenue through subscriptions, telehealth integration, & data analytics</li>
-        <li><i class="fa-solid fa-handshake"></i> Partnership opportunities with clinics, insurance providers, & device manufacturers</li>
-        <li><i class="fa-solid fa-book"></i> Research potential via anonymized data insights</li>
-    </ul>
-
-    <h3><i class="fa-solid fa-globe"></i> Vision</h3>
-    <p>To democratize cardiac healthcare—saving lives through smart, accessible, AI-driven heart monitoring.</p>
-
-    <p><i class="fa-solid fa-mobile-screen"></i> Visit our booth to see a live demo! Let’s shape the future of preventive heart care—together.</p>
-</section>
-
-
-<section id="team" class="section">
-    <h2>Our Team</h2>
-    <div class="team">
-        <div class="team-member">
-            <img src="images/j.jpg" alt="Team Member 1" class="team-photo">
-            <h3>Team Member 1</h3>
-            <p>Role: Project Leader</p>
+                    L1850,100 L1900,40 L1950,100 L2000,100 
+                    L2050,10 L2100,190 L2150,100 L2300,100 
+                    L2350,40 L2400,100
+                " />
+            </svg>
         </div>
-        <div class="team-member">
-            <img src="images/j.jpg" alt="Team Member 2" class="team-photo">
-            <h3>Team Member 2</h3>
-            <p>Role: AI Developer</p>
+        <h1 class="typing-effect">SONOCARDIA</h1>
+        <p class="floating">AI-Powered Mobile App For Heart Disease Detection & Prediction</p>
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down pulse"></i>
         </div>
-        <div class="team-member">
-            <img src="images/j.jpg" alt="Team Member 3" class="team-photo">
-            <h3>Team Member 3</h3>
-            <p>Role: Mobile Developer</p>
-        </div><br>
-        <div class="team-member">
-            <img src="images/j.jpg" alt="Team Member 4" class="team-photo">
-            <h3>Team Member 4</h3>
-            <p>Role: Embedded Systems Engineer</p>
-        </div>
-        <div class="team-member">
-            <img src="images/j.jpg" alt="Team Member 4" class="team-photo">
-            <h3>Team Member 5</h3>
-            <p>Role: Embedded Systems Engineer</p>
-        </div>
-    </div>
-</section>
+    </header>
 
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Sonocardia</span>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" class="nav-link"><i class="fa-solid fa-info-circle"></i> About</a>
+            <a href="#team" class="nav-link"><i class="fa-solid fa-users"></i> Team</a>
+            <a href="#videos" class="nav-link"><i class="fa-solid fa-play-circle"></i> Videos</a>
+            <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2><i class="fa-solid fa-rocket"></i> About the Project</h2>
+        <div class="content-grid">
+            <div class="content-card">
+                <p><strong>Sonocardia</strong> is an intelligent heart sound analysis system that uses deep learning to detect heart murmurs and predict detailed murmur characteristics. Our system provides accurate patient-level analysis based on audio recordings from multiple auscultation points, helping to improve early heart disease detection.</p>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h3>Why Sonocardia?</h3>
+                <p>Cardiovascular diseases claim 17.9 million lives annually — that's 32% of all global deaths. Sonocardia is revolutionizing cardiac care through real-time, AI-driven heart monitoring.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3>What is Sonocardia?</h3>
+                <p>An AI-powered mobile application that enables real-time heart sound and ECG analysis to detect and predict heart diseases quickly and accurately, using embedded hardware.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <h3>How It Works</h3>
+                <ul>
+                    <li><strong>Record:</strong> 5–10 seconds of heart sound and ECG via the app</li>
+                    <li><strong>Analyze:</strong> ML & DL models trained on 100k+ real-world samples</li>
+                    <li><strong>Diagnose:</strong> Classify as normal/abnormal, predict severity, alert user</li>
+                    <li><strong>Share:</strong> Instantly send reports to physicians or caregivers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tech-highlights">
+            <h3><i class="fa-solid fa-microscope"></i> Technology Highlights</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Machine & Deep Learning (CNNs, Random Forest, Transformers)</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Accuracy: +90% in HeartSound Classification and early Arrhythmia Detection</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-wifi"></i>
+                    <span>Integrated hardware for real-time recording & feedback</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-cloud"></i>
+                    <span>Seamless cloud communication and data visualization</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Built-in security & emergency response capabilities</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="target-users">
+            <h3><i class="fa-solid fa-users"></i> Target Users</h3>
+            <div class="users-grid">
+                <div class="user-card">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                    <span>Patients with heart conditions</span>
+                </div>
+                <div class="user-card">
+                    <i class="fa-solid fa-person-cane"></i>
+                    <span>Seniors living alone or in remote areas</span>
+                </div>
+                <div class="user-card">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>Doctors needing rapid diagnostics</span>
+                </div>
+                <div class="user-card">
+                    <i class="fa-solid fa-people-group"></i>
+                    <span>Caregivers tracking loved ones' health</span>
+                </div>
+                <div class="user-card">
+                    <i class="fa-solid fa-person-running"></i>
+                    <span>Health-conscious individuals</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="business-impact">
+            <h3><i class="fa-solid fa-briefcase"></i> Business Impact</h3>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Entering the booming mHealth market</span>
+                </div>
+                <div class="impact-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Low-cost alternative with potential for local manufacturing in Egypt</span>
+                </div>
+                <div class="impact-item">
+                    <i class="fa-solid fa-coins"></i>
+                    <span>Revenue through subscriptions, telehealth integration, & data analytics</span>
+                </div>
+                <div class="impact-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Partnership opportunities with clinics, insurance providers, & device manufacturers</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="vision-section">
+            <h3><i class="fa-solid fa-globe"></i> Vision</h3>
+            <p class="vision-text">To democratize cardiac healthcare—saving lives through smart, accessible, AI-driven heart monitoring.</p>
+            <p class="cta-text"><i class="fa-solid fa-mobile-screen"></i> Visit our booth to see a live demo! Let's shape the future of preventive heart care—together.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <h2><i class="fa-solid fa-users"></i> Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <div class="team-photo-container">
+                    <img src="images/j.jpg" alt="Team Member 1" class="team-photo">
+                    <div class="team-photo-overlay">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <h3>Team Member 1</h3>
+                <p class="role">Project Leader</p>
+                <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo-container">
+                    <img src="images/j.jpg" alt="Team Member 2" class="team-photo">
+                    <div class="team-photo-overlay">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <h3>Team Member 2</h3>
+                <p class="role">AI Developer</p>
+                <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo-container">
+                    <img src="images/j.jpg" alt="Team Member 3" class="team-photo">
+                    <div class="team-photo-overlay">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <h3>Team Member 3</h3>
+                <p class="role">Mobile Developer</p>
+                <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo-container">
+                    <img src="images/j.jpg" alt="Team Member 4" class="team-photo">
+                    <div class="team-photo-overlay">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <h3>Team Member 4</h3>
+                <p class="role">Embedded Systems Engineer</p>
+                <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-photo-container">
+                    <img src="images/j.jpg" alt="Team Member 5" class="team-photo">
+                    <div class="team-photo-overlay">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <h3>Team Member 5</h3>
+                <p class="role">Embedded Systems Engineer</p>
+                <div class="team-social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
     <section id="videos" class="section">
-        <h2>Project Videos</h2>
-        <h3>Marketing Video</h3>
+        <h2><i class="fa-solid fa-play-circle"></i> Project Videos</h2>
+        
+        <div class="video-section">
+            <h3><i class="fa-solid fa-video"></i> Marketing Video</h3>
+            <div class="video-container">
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/UKafLQ6BnUQ?si=jdgGy2ynXzKHXlcv" 
+                    title="Sonocardia Marketing Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
 
-        <div class="video-container">
-    <iframe width="700" height="400" src="https://www.youtube.com/embed/UKafLQ6BnUQ?si=jdgGy2ynXzKHXlcv" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-        <h3>App Prototype</h3>
-
-<div class="video-container">
-            <iframe width="700" height="400"  src="https://www.youtube.com/embed/wyGmQM255GA?si=zbid7eBCjJbvriQG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-section">
+            <h3><i class="fa-solid fa-mobile-screen"></i> App Prototype</h3>
+            <div class="video-container">
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/wyGmQM255GA?si=zbid7eBCjJbvriQG" 
+                    title="Sonocardia App Prototype" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p>Email: info@sonocardia.com</p>
+        <h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@sonocardia.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Cairo, Egypt</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+20 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
     </section>
 
-    <button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Scroll to Top Button -->
+    <button id="topBtn" title="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Sonocardia Project. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fa-solid fa-heart-pulse"></i> Sonocardia</h4>
+                <p>Revolutionizing cardiac healthcare through AI-powered technology.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sonocardia Project. All rights reserved.</p>
+        </div>
     </footer>
 
-<script>
-    // Contact Form Script
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Thank you for your message! We will get back to you soon.');
-        document.getElementById('contactForm').reset();
-    });
+    <script>
+        // Enhanced JavaScript with animations and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Preloader
+            setTimeout(() => {
+                document.getElementById('preloader').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('preloader').style.display = 'none';
+                }, 500);
+            }, 2000);
 
-    // Scroll To Top Button
-    const topBtn = document.getElementById('topBtn');
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
 
-    window.onscroll = function () {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            topBtn.style.display = "block";
-        } else {
-            topBtn.style.display = "none";
-        }
-        highlightCurrentSection(); // Call on scroll
-    };
+            // Mobile menu toggle
+            document.getElementById('menuToggle').addEventListener('click', function() {
+                document.getElementById('navLinks').classList.toggle('active');
+            });
 
-    topBtn.onclick = function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
 
-    // Highlight Navbar Link Based on Scroll Position
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
 
-    function highlightCurrentSection() {
-        let scrollY = window.pageYOffset;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
 
-        sections.forEach(section => {
-            const sectionHeight = section.offsetHeight;
-            const sectionTop = section.offsetTop - 100; // Adjust based on header height
-            const sectionId = section.getAttribute('id');
+            // Observe sections and team members
+            document.querySelectorAll('.section, .team-member').forEach(el => {
+                observer.observe(el);
+            });
 
-            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            // Contact form
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Add loading state
+                const button = this.querySelector('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+                button.disabled = true;
+
+                // Simulate form submission
+                setTimeout(() => {
+                    alert('Thank you for your message! We will get back to you soon.');
+                    this.reset();
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }, 2000);
+            });
+
+            // Scroll to top button
+            const topBtn = document.getElementById('topBtn');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    topBtn.style.display = 'block';
+                } else {
+                    topBtn.style.display = 'none';
+                }
+            });
+
+            topBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Active navigation highlighting
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
                 navLinks.forEach(link => {
                     link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${sectionId}`) {
+                    if (link.getAttribute('href') === `#${current}`) {
                         link.classList.add('active');
                     }
                 });
+            });
+
+            // Parallax effect for particles
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const particles = document.querySelectorAll('.particle');
+                particles.forEach((particle, index) => {
+                    const speed = 0.5 + (index * 0.1);
+                    particle.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+            });
+
+            // Typing effect for header
+            const headerTitle = document.querySelector('.typing-effect');
+            if (headerTitle) {
+                const text = headerTitle.textContent;
+                headerTitle.textContent = '';
+                let i = 0;
+                const typeWriter = () => {
+                    if (i < text.length) {
+                        headerTitle.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 100);
+                    }
+                };
+                setTimeout(typeWriter, 1000);
             }
         });
-    }
-
-    // Preloader Script: Hide preloader after videos are loaded
-window.onload = function () {
-    const videos = document.querySelectorAll('video');
-    let loadedVideos = 0;
-
-    videos.forEach(video => {
-        video.oncanplaythrough = function () {
-            loadedVideos++;
-            if (loadedVideos === videos.length) {
-                document.getElementById('preloader').style.display = 'none';
-            }
-        };
-    });
-};
-
-document.getElementById('menuToggle').addEventListener('click', function () {
-        document.getElementById('navLinks').classList.toggle('active');
-    });
-
-</script>
+    </script>
 
 </body>
 
