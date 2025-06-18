@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonocardia</title>
+    <meta name="description" content="Sonocardia: AI-powered heart disease detection system. Learn about our project, team, and contact us.">
+    <meta name="keywords" content="Sonocardia, AI Heart Detection, Heart Murmur, Healthcare AI, Medical Technology">
+    <meta name="author" content="Sonocardia Team">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<header>
+    <div class="ecg-background">
+        <svg viewBox="0 0 2400 200" preserveAspectRatio="none" class="ecg-wave">
+            <path d="
+                M0,100 
+                L100,100 L150,60 L200,100 L250,100 
+                L300,20 L350,180 L400,100 L500,100 
+                L550,60 L600,100 L700,100
+
+                L800,100 L850,60 L900,100 L950,100 
+                L1000,20 L1050,180 L1100,100 L1200,100 
+                L1250,60 L1300,100 L1400,100
+
+                L1500,100 L1550,60 L1600,100 L1650,100 
+                L1700,20 L1750,180 L1800,100 L1900,100 
+                L1950,60 L2000,100 L2100,100
+
+                L2200,100 L2250,60 L2300,100 L2400,100
+            " />
+        </svg>
+    </div>
+    <h1>Sonocardia Project</h1>
+    <p>AI-Powered Mobile App For Heart Disease Detection & Prediction</p>
+</header>
+
+
+<nav>
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<section id="about" class="section">
+    <h2>About the Project</h2>
+    <p><strong>Sonocardia</strong> is an intelligent heart sound analysis system that uses deep learning to detect heart murmurs and predict detailed murmur characteristics. Our system provides accurate patient-level analysis based on audio recordings from multiple auscultation points, helping to improve early heart disease detection. The system features real-time murmur detection, classification of murmur types, and integrates with mobile applications and embedded hardware for remote monitoring.</p>
+
+    <h3><i class="fa-solid fa-lightbulb"></i> Why Sonocardia?</h3>
+    <p>Cardiovascular diseases claim 17.9 million lives annually — that’s 32% of all global deaths.</p>
+    <p>Sonocardia is revolutionizing cardiac care through real-time, AI-driven heart monitoring, making early detection accessible, affordable, and automatic.</p>
+
+    <h3><i class="fa-solid fa-mobile-screen"></i> What is Sonocardia?</h3>
+    Sonocardia is an AI-powered mobile application that enables real-time heart sound and ECG analysis to detect and predict heart diseases quickly and accurately, using an embedded hardware.
+
+    <ul>
+        <li>Captures heart sounds using a modified stethoscope (MAX9814 + ESP32)</li>
+        <li>Records ECG signals via AD8232 sensor</li>
+        <li>Analyzes both in real-time using AI and deep learning</li>
+        <li>Detects murmurs, arrhythmias, heart failure risk, and more</li>
+        <li>Notifies users and emergency services in critical cases</li>
+        <li>Enables users to share results directly with doctors</li>
+    </ul>
+
+    <h3><i class="fa-solid fa-gears"></i> How It Works</h3>
+    <ul>
+        <li><strong>Record:</strong> 5–10 seconds of heart sound and ECG via the app</li>
+        <li><strong>Analyze:</strong> ML & DL models trained on 100k+ real-world samples</li>
+        <li><strong>Diagnose:</strong> Classify as normal/abnormal, predict severity, alert user</li>
+        <li><strong>Share:</strong> Instantly send reports to physicians or caregivers</li>
+    </ul>
+
+    <h3><i class="fa-solid fa-microscope"></i> Technology Highlights</h3>
+    <ul>
+        <li><i class="fa-solid fa-lightbulb"></i> Machine & Deep Learning (CNNs, Random Forest, Transformers)</li>
+        <li><i class="fa-solid fa-chart-line"></i> Accuracy: +90% in HeartSound Classification and in early Arrhythmia Detection and Prediction</li>
+        <li><i class="fa-solid fa-wifi"></i> Integrated hardware for real-time recording & feedback</li>
+        <li><i class="fa-solid fa-cloud"></i> Seamless cloud communication and data visualization</li>
+        <li><i class="fa-solid fa-lock"></i> Built-in security & emergency response capabilities</li>
+    </ul>
+
+    <h3><i class="fa-solid fa-users"></i> Target Users</h3>
+    <ul>
+        <li><i class="fa-solid fa-heart-circle-check"></i> Patients with heart conditions</li>
+        <li><i class="fa-solid fa-person-cane"></i> Seniors living alone or in remote areas</li>
+        <li><i class="fa-solid fa-user-doctor"></i> Doctors needing rapid diagnostics</li>
+        <li><i class="fa-solid fa-people-group"></i> Caregivers tracking loved ones’ health</li>
+        <li><i class="fa-solid fa-person-running"></i> Health-conscious individuals</li>
+    </ul>
+
+    <h3><i class="fa-solid fa-briefcase"></i> Business Impact</h3>
+    <ul>
+        <li><i class="fa-solid fa-chart-line"></i> Entering the booming mHealth market</li>
+        <li><i class="fa-solid fa-globe"></i> Similar devices are not available in Egypt and cost at least $300 internationally. <br> Sonocardia offers a low-cost alternative with potential for local manufacturing in Egypt at significantly reduced prices.</li>
+        <li><i class="fa-solid fa-coins"></i> Revenue through subscriptions, telehealth integration, & data analytics</li>
+        <li><i class="fa-solid fa-handshake"></i> Partnership opportunities with clinics, insurance providers, & device manufacturers</li>
+        <li><i class="fa-solid fa-book"></i> Research potential via anonymized data insights</li>
+    </ul>
+
+    <h3><i class="fa-solid fa-globe"></i> Vision</h3>
+    <p>To democratize cardiac healthcare—saving lives through smart, accessible, AI-driven heart monitoring.</p>
+
+    <p><i class="fa-solid fa-mobile-screen"></i> Visit our booth to see a live demo! Let’s shape the future of preventive heart care—together.</p>
+</section>
+
+
+<section id="team" class="section">
+    <h2>Our Team</h2>
+    <div class="team">
+        <div class="team-member">
+            <img src="images/j.jpg" alt="Team Member 1" class="team-photo">
+            <h3>Team Member 1</h3>
+            <p>Role: Project Leader</p>
+        </div>
+        <div class="team-member">
+            <img src="images/j.jpg" alt="Team Member 2" class="team-photo">
+            <h3>Team Member 2</h3>
+            <p>Role: AI Developer</p>
+        </div>
+        <div class="team-member">
+            <img src="images/j.jpg" alt="Team Member 3" class="team-photo">
+            <h3>Team Member 3</h3>
+            <p>Role: Mobile Developer</p>
+        </div><br>
+        <div class="team-member">
+            <img src="images/j.jpg" alt="Team Member 4" class="team-photo">
+            <h3>Team Member 4</h3>
+            <p>Role: Embedded Systems Engineer</p>
+        </div>
+        <div class="team-member">
+            <img src="images/j.jpg" alt="Team Member 4" class="team-photo">
+            <h3>Team Member 5</h3>
+            <p>Role: Embedded Systems Engineer</p>
+        </div>
+    </div>
+</section>
+
+    <section id="videos" class="section">
+        <h2>Project Videos</h2>
+        <h3>Marketing Video</h3>
+        <video controls>
+            <source src="SONOCARDIA-1min-Calm - Made with Clipchamp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Prototype Demonstration</h3>
+        <video controls>
+            <source src="SONOCARDIA-1min-Calm - Made with Clipchamp.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: info@sonocardia.com</p>
+    </section>
+
+    <button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <footer>
+        <p>&copy; 2025 Sonocardia Project. All rights reserved.</p>
+    </footer>
+
+<script>
+    // Contact Form Script
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        document.getElementById('contactForm').reset();
+    });
+
+    // Scroll To Top Button
+    const topBtn = document.getElementById('topBtn');
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+        highlightCurrentSection(); // Call on scroll
+    };
+
+    topBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // Highlight Navbar Link Based on Scroll Position
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    function highlightCurrentSection() {
+        let scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 100; // Adjust based on header height
+            const sectionId = section.getAttribute('id');
+
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    // Preloader Script: Hide preloader after videos are loaded
+window.onload = function () {
+    const videos = document.querySelectorAll('video');
+    let loadedVideos = 0;
+
+    videos.forEach(video => {
+        video.oncanplaythrough = function () {
+            loadedVideos++;
+            if (loadedVideos === videos.length) {
+                document.getElementById('preloader').style.display = 'none';
+            }
+        };
+    });
+};
+
+document.getElementById('menuToggle').addEventListener('click', function () {
+        document.getElementById('navLinks').classList.toggle('active');
+    });
+
+</script>
+
+</body>
+
+</html>
