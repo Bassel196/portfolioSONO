@@ -12,7 +12,10 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+    background: linear-gradient(rgba(248, 249, 250, 0.95), rgba(233, 236, 239, 0.95)), url('images/drsono.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: #2c3e50;
     overflow-x: hidden;
     position: relative;
@@ -84,6 +87,17 @@ nav.scrolled {
     font-size: 1.5rem;
     font-weight: 700;
     color: #dc143c;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.1);
 }
 
 .nav-brand i {
@@ -190,6 +204,48 @@ header::before {
     70% { transform: translate(0%, 10%); }
     80% { transform: translate(-15%, 0%); }
     90% { transform: translate(10%, 5%); }
+}
+
+.peek-container {
+    position: absolute;
+    bottom: -700px;
+    right: 0px;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    transform-origin: bottom right;
+}
+
+header:hover .peek-container {
+    bottom: 0px;
+    transform: rotate(-3deg);
+}
+
+.dr-sono-peek {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.peek-text {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.2;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
+    margin-left: -110px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.4s;
+    width: 180px;
+}
+
+header:hover .peek-text {
+    opacity: 1;
 }
 
 .ecg-background {
@@ -400,7 +456,17 @@ h3 {
 }
 
 .feature-card:hover .feature-icon {
-    transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Right align for How It Works section */
+.feature-card:nth-child(3) h3,
+.feature-card:nth-child(3) ul {
+    text-align: center;
+}
+
+.feature-card:nth-child(3) ul li {
+    text-align: left;
 }
 
 /* Tech Highlights */
@@ -618,9 +684,9 @@ h3 {
     color: white;
 }
 
-.team-member:hover .team-photo-overlay {
+/* .team-member:hover .team-photo-overlay {
     opacity: 1;
-}
+} */
 
 .team-member:hover .team-photo {
     transform: scale(1.1);
@@ -898,6 +964,15 @@ footer {
     color: #dc143c;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 .footer-section ul {
@@ -940,6 +1015,40 @@ footer {
     background: #dc143c;
     color: white;
     transform: translateY(-3px);
+}
+
+/* Thank You Section */
+#thank-you {
+    text-align: center;
+}
+
+.appreciation-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.thank-you-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.flash-video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    border: 3px solid rgba(220, 20, 60, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.meme-text-flash {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000;
 }
 
 .footer-bottom {
@@ -1152,4 +1261,14 @@ footer {
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
+}
+
+.thank-gif-center {
+  display: flex;
+  justify-content: center;
+}
+
+.tenor-gif-embed {
+  max-width: 350px; 
+  width: 100%;
 }

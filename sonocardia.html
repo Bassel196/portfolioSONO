@@ -58,12 +58,16 @@
         <div class="scroll-indicator">
             <i class="fa-solid fa-chevron-down pulse"></i>
         </div>
+        <div class="peek-container">
+            <img src="images/baby.png" alt="Dr. Sono" class="dr-sono-peek">
+            <p class="peek-text">YESSS...<br>I Knew you <br>would come!</p>
+        </div>
     </header>
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-brand">
-            <i class="fa-solid fa-heart-pulse"></i>
+            <img src="images/logo_project.png" alt="Sonocardia Logo" class="nav-logo">
             <span>SONOCARDIA</span>
         </div>
         <div class="menu-toggle" id="menuToggle">
@@ -73,7 +77,6 @@
             <a href="#about" class="nav-link"><i class="fa-solid fa-info-circle"></i> About</a>
             <a href="#team" class="nav-link"><i class="fa-solid fa-users"></i> Team</a>
             <a href="#videos" class="nav-link"><i class="fa-solid fa-play-circle"></i> Videos</a>
-            <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
         </div>
     </nav>
 
@@ -122,16 +125,24 @@
             <div class="tech-grid">
                 <div class="tech-item">
                     <i class="fa-solid fa-brain"></i>
-                    <span>Machine & Deep Learning (CNNs, Random Forest, Transformers)</span>
+                    <span>Machine & Deep Learning (CNNs, Random Forest, XGBoost)</span>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-chart-line"></i>
-                    <span>Accuracy: +90% in HeartSound Classification and early Arrhythmia Detection</span>
+                    <span>Accuracy: Averaging <b>+90%</b> in HeartSound Detection, Severity Classification and early Arrhythmia risk Prediction</span>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-wifi"></i>
                     <span>Integrated hardware for real-time recording & feedback</span>
                 </div>
+                <div class="tech-item">
+                  <i class="fa-solid fa-microchip"></i>
+                  <span>Captures heart sounds using a modified stethoscope <b>MAX9814</b> sensor & records ECG signals via <b>AD8232</b> sensor</span>
+              </div>
+              <div class="tech-item">
+                <i class="fa-solid fa-microchip"></i>
+                <span>The recordings saved in local SD Card then it tranfers to the database by <b>ESP-32</b> micro-controller</span>
+            </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-cloud"></i>
                     <span>Seamless cloud communication and data visualization</span>
@@ -194,7 +205,7 @@
         <div class="vision-section">
             <h3><i class="fa-solid fa-globe"></i> Vision</h3>
             <p class="vision-text">To democratize cardiac healthcare—saving lives through smart, accessible, AI-driven heart monitoring.</p>
-            <p class="cta-text"><i class="fa-solid fa-mobile-screen"></i> Visit our booth to see a live demo! Let's shape the future of preventive heart care—together.</p>
+            <p class="cta-text"> Let's shape the future of preventive heart care—together.</p>
         </div>
     </section>
 
@@ -204,77 +215,77 @@
         <div class="team">
             <div class="team-member">
                 <div class="team-photo-container">
-                    <img src="images/j.jpg" alt="Team Member 1" class="team-photo">
+                    <img src="images/mohab.jpeg" alt="Team Member 1" class="team-photo">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>
-                <h3>Team Member 1</h3>
+                <h3>Mohab Mohammed Saber</h3>
                 <p class="role">Project Leader</p>
                 <div class="team-social">
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/mohab-saber?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/MohabSaber"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:mohab2100084@miuegypt.edu.eg"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div class="team-member">
                 <div class="team-photo-container">
-                    <img src="images/j.jpg" alt="Team Member 2" class="team-photo">
+                    <img src="images/bassel2.jpeg" alt="Team Member 2" class="team-photo">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>
-                <h3>Team Member 2</h3>
-                <p class="role">AI Developer</p>
+                <h3>Bassel AbdelReheem AbdelMohsen</h3>
+                <p class="role">Data Science & Mobile Developer</p>
                 <div class="team-social">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/bassel-abdelreheem-6302a8281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Bassel196"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:bassel2107433@miuegypt.edu.eg"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div class="team-member">
                 <div class="team-photo-container">
-                    <img src="images/j.jpg" alt="Team Member 3" class="team-photo">
+                    <img src="images/ahmed.jpeg" alt="Team Member 3" class="team-photo">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>
-                <h3>Team Member 3</h3>
-                <p class="role">Mobile Developer</p>
+                <h3>Ahmed AbdelRahman Gaber</h3>
+                <p class="role">Mobil & AI Developer</p>
                 <div class="team-social">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-abdelrahman-43018625a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ahmedabdelrahman1"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ahmed2103540@miuegypt.edu.eg"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div class="team-member">
                 <div class="team-photo-container">
-                    <img src="images/j.jpg" alt="Team Member 4" class="team-photo">
+                    <img src="images/ragy.jpeg" alt="Team Member 4" class="team-photo">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>
-                <h3>Team Member 4</h3>
-                <p class="role">Embedded Systems Engineer</p>
+                <h3>Ragy Sameh Wasfy</h3>
+                <p class="role">Mobile Developer & Embedded Systems Engineer</p>
                 <div class="team-social">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ragy-sameh-540514158?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/RagySamehW"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:ragy2106213@miuegypt.edu.eg"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
             <div class="team-member">
                 <div class="team-photo-container">
-                    <img src="images/j.jpg" alt="Team Member 5" class="team-photo">
+                    <img src="images/omar2.png" alt="Team Member 5" class="team-photo">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </div>
-                <h3>Team Member 5</h3>
-                <p class="role">Embedded Systems Engineer</p>
+                <h3>Omar AbdelAzim Yussef</h3>
+                <p class="role">AI & Mobile Developer</p>
                 <div class="team-social">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/omar-abdelazim-5a1529311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/OmarAzima"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:omar2100083@miuegypt.edu.eg"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
         </div>
@@ -303,52 +314,16 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2><i class="fa-solid fa-envelope"></i> Contact Us</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>info@sonocardia.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <h4>Location</h4>
-                        <p>Cairo, Egypt</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+20 123 456 789</p>
-                    </div>
-                </div>
-            </div>
-            
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <i class="fa-solid fa-message"></i>
-                </div>
-                <button type="submit">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    Send Message
-                </button>
-            </form>
+    <!-- Thank You Section -->
+    <section id="thank-you" class="section">
+        <h2><i class="fa-solid fa-gift"></i> A Gift For You!</h2>
+        <p class="appreciation-text">We appreciate your patience and time for scrolling all the way here. You're awesome!</p>
+        <!-- <div class="thank-you-content">
+            <video autoplay loop muted playsinline src="images/flash pen.mp4" class="flash-video"></video>
+            <p class="meme-text-flash">After this flash, you'll be compelled to see our project again... and again... starting from the top!</p>
+        </div> -->
+        <div class="thank-gif-center">
+          <div class="tenor-gif-embed" data-postid="22414324" data-share-method="host" data-aspect-ratio="1.20301" data-width="100%"><a href="https://tenor.com/view/thank-you-gif-22414324">Thank You GIF</a>from <a href="https://tenor.com/search/thank-gifs">Thank GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         </div>
     </section>
 
@@ -361,7 +336,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4><i class="fa-solid fa-heart-pulse"></i> Sonocardia</h4>
+                <h4><img src="images/logo_project.png" alt="Sonocardia Logo" class="footer-logo"> Sonocardia</h4>
                 <p>Revolutionizing cardiac healthcare through AI-powered technology.</p>
             </div>
             <div class="footer-section">
@@ -370,7 +345,6 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#videos">Videos</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -475,7 +449,6 @@
                     topBtn.style.display = 'none';
                 }
             });
-
             topBtn.addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
