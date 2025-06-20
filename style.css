@@ -209,17 +209,17 @@ header::before {
 .peek-container {
     position: absolute;
     bottom: -700px;
-    right: 0px;
+    right: 70px;
     transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 10;
     display: flex;
     align-items: flex-end;
     transform-origin: bottom right;
+    transform: rotate(-3deg);
 }
 
-header:hover .peek-container {
+header .peek-container {
     bottom: 0px;
-    transform: rotate(-3deg);
 }
 
 .dr-sono-peek {
