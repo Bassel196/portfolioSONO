@@ -1405,3 +1405,26 @@ footer {
 .hardware-photo.floating {
     animation: hardwareFloat 2.8s ease-in-out infinite;
 }
+
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-top: 0.7em;
+  padding: 0.4em 1em;
+  background: linear-gradient(45deg, #dc143c, #8b0000);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background 0.2s, transform 0.2s;
+}
+.cv-link i {
+  font-size: 1.1em;
+}
+.cv-link:hover {
+  background: linear-gradient(45deg, #8b0000, #dc143c);
+  transform: translateY(-2px) scale(1.04);
+  color: #fff;
+}
